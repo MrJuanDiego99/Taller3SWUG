@@ -1,0 +1,25 @@
+<br>
+<div class="container">
+  <nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3">
+    <h1>
+      <a class="navbar-brand" href="#"> <img src="" alt="img" class="logo"> FRUVER</a>
+    </h1>
+    <ul class="nav nav-pills">
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/productos/lista']">Carrito</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#scrollspyHeading2">Mis pedidos</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Acceder</a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#scrollspyHeading3">Cliente</a></li>
+          <li><a class="dropdown-item" href="#scrollspyHeading4">Administrador</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <hr>
+  <router-outlet></router-outlet>
+</div>
