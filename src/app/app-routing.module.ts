@@ -7,11 +7,11 @@ import { DetalleProductosComponent } from './detalle-productos/detalle-productos
 
 const routes: Routes = [
 
-  { path:'productos/lista',component: ListaProductosComponent },
-  { path:'productos/editar/:idProducto', component: EditarProductosComponent },
-  
   { path:'productos',component: InicialProductosComponent },
+  { path:'productos/lista',component: ListaProductosComponent },
   { path:'productos/detalle/:idProducto', component: DetalleProductosComponent },
+  
+  { path:'productos/editar/:idProducto', component: EditarProductosComponent },
   { path:'productos/agregar', component: EditarProductosComponent },
   { path:'**',redirectTo:'/productos',pathMatch:'full' },
 
